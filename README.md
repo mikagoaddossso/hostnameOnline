@@ -39,4 +39,3 @@ Questo progetto è una semplice applicazione Flask che restituisce il nome host 
 
 5. **Accedere all'applicazione**:
    Aprire un browser e visitare `http://localhost:8080` per visualizzare il nome host del server.
-```
