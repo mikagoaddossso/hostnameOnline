@@ -39,3 +39,20 @@ Questo progetto è una semplice applicazione Flask che restituisce il nome host 
 
 5. **Accedere all'applicazione**:
    Aprire un browser e visitare `http://localhost:8080` per visualizzare il nome host del server.
+
+## Eseguire con Docker
+
+1. **Costruire l'immagine Docker**:
+   Assicurarsi di trovarsi nella directory contenente il file `Dockerfile` e il file `py.py`, quindi eseguire:
+   ```sh
+   docker build -t hostnameonline .
+   ```
+
+2. **Eseguire il container**:
+   ```sh
+   docker run -p 8080:80 hostnameonline
+   ```
+
+3. **Accedere all'applicazione**:
+   Aprire un browser e visitare `http://localhost:8080` per visualizzare il nome host del server.
+```

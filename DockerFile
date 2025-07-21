@@ -1,0 +1,17 @@
+# Utilizza l'immagine base di Python 3.11 slim
+FROM python:3.11-slim
+
+# Imposta la directory di lavoro all'interno del container
+WORKDIR /app
+
+# Copia il file py.py nella directory di lavoro del container
+COPY py.py .
+
+# Installa Flask, necessario per eseguire l'applicazione
+RUN pip install flask
+
+# Espone la porta 80 per l'applicazione
+EXPOSE 80
+
+# Comando per avviare l'applicazione
+CMD ["python", "py.py"]
